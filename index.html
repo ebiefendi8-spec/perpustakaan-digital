@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            📚 <span>Perpustakaan</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">🏠 Dashboard</a>
+            <a href="#buku">📖 Data Buku</a>
+            <a href="#anggota">👥 Anggota</a>
+            <a href="#peminjaman">📋 Peminjaman</a>
+            <a href="#pengembalian">↩️ Pengembalian</a>
+        </nav>
+
+        <div class="logout">
+            <a href="#">🚪 Keluar</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Selamat datang di Sistem Perpustakaan</p>
+            </div>
+
+            <div class="profile">
+                👤 <span>Admin</span>
+            </div>
+        </header>
+
+        <!-- Statistik -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <div>
+                    <h3>1.250</h3>
+                    <p>Total Buku</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">👥</div>
+                <div>
+                    <h3>350</h3>
+                    <p>Anggota</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">📖</div>
+                <div>
+                    <h3>85</h3>
+                    <p>Buku Dipinjam</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">↩️</div>
+                <div>
+                    <h3>42</h3>
+                    <p>Sudah Kembali</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Buku Terbaru -->
+        <section class="content-box" id="buku">
+            <div class="section-header">
+                <div>
+                    <h2>📚 Buku Terbaru</h2>
+                    <p>Daftar koleksi buku perpustakaan</p>
+                </div>
+
+                <button>+ Tambah Buku</button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Judul Buku</th>
+                            <th>Penulis</th>
+                            <th>Penerbit</th>
+                            <th>Tahun</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Belajar HTML & CSS</td>
+                            <td>Andi Setiawan</td>
+                            <td>Informatika</td>
+                            <td>2025</td>
+                            <td><span class="status tersedia">Tersedia</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Pemrograman Python</td>
+                            <td>Budi Santoso</td>
+                            <td>Elex Media</td>
+                            <td>2024</td>
+                            <td><span class="status dipinjam">Dipinjam</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Dasar-Dasar Database</td>
+                            <td>Rudi Hartono</td>
+                            <td>Gramedia</td>
+                            <td>2025</td>
+                            <td><span class="status tersedia">Tersedia</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Algoritma Pemrograman</td>
+                            <td>Dewi Lestari</td>
+                            <td>Informatika</td>
+                            <td>2023</td>
+                            <td><span class="status tersedia">Tersedia</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Peminjaman -->
+        <section class="content-box" id="peminjaman">
+            <div class="section-header">
+                <div>
+                    <h2>📋 Peminjaman Terbaru</h2>
+                    <p>Aktivitas peminjaman buku</p>
+                </div>
+            </div>
+
+            <div class="loan-list">
+
+                <div class="loan">
+                    <div class="book-icon">📖</div>
+                    <div class="loan-info">
+                        <h3>Belajar HTML & CSS</h3>
+                        <p>Dipinjam oleh Eby Efendi Pratama</p>
+                    </div>
+                    <span class="status dipinjam">Dipinjam</span>
+                </div>
+
+                <div class="loan">
+                    <div class="book-icon">📘</div>
+                    <div class="loan-info">
+                        <h3>Pemrograman Python</h3>
+                        <p>Dipinjam oleh Ahmad Fauzan</p>
+                    </div>
+                    <span class="status dipinjam">Dipinjam</span>
+                </div>
+
+                <div class="loan">
+                    <div class="book-icon">📕</div>
+                    <div class="loan-info">
+                        <h3>Dasar-Dasar Database</h3>
+                        <p>Dipinjam oleh Rizky Ramadhan</p>
+                    </div>
+                    <span class="status kembali">Kembali</span>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Perpustakaan Digital. All Rights Reserved.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
